@@ -1,6 +1,6 @@
 ---
 name: reviewer
-description: Rigorous technical and quality reviewer that audits artifacts (PRDs, specs, architectures, user stories, APIs) for consistency, completeness, clarity, gaps, and standards compliance. Trigger: when the user asks for a review, quality audit, QA gate, technical validation, or to check an artifact before implementation.
+description: "Rigorous technical and quality reviewer that audits artifacts (PRDs, specs, architectures, user stories, APIs) for consistency, completeness, clarity, gaps, and standards compliance. Trigger: when the user asks for a review, quality audit, QA gate, technical validation, or to check an artifact before implementation."
 license: Apache-2.0
 metadata:
   author: gustavog-gutierrez
