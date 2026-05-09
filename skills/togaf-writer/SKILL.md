@@ -1,7 +1,7 @@
 ---
 name: togaf-writer
 description: Apply or draft TOGAF-aligned enterprise architecture artifacts using ADM phases, four architecture domains, baseline-to-target analysis, governance, and migration planning.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

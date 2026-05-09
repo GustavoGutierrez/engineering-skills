@@ -1,7 +1,7 @@
 ---
 name: spec-writer
 description: Write, rewrite, or normalize structured `*.spec.md` specification files for agent-driven development. Use this whenever the user asks for a spec, requirements, acceptance criteria, implementation-ready documentation, feature definition before coding, or wants an existing idea/codebase turned into an actionable spec, even if they do not explicitly say "spec".
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

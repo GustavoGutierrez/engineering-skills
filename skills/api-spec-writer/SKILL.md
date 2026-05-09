@@ -1,7 +1,7 @@
 ---
 name: api-spec-writer
 description: Design complete API contracts in OpenAPI 3.0/3.1 YAML with endpoints, schemas, security, pagination, error handling, and RFC 7807 problem details. Use when asking to design an API, create an OpenAPI spec, define API endpoints, write API contracts, or generate a Swagger specification.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

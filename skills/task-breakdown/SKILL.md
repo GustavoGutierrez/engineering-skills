@@ -1,7 +1,7 @@
 ---
 name: task-breakdown
 description: Break complex features, epics, or specs into small executable tasks with logical sequencing, dependencies, ownership, acceptance signals, and parallelization guidance.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

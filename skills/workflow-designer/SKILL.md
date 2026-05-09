@@ -1,7 +1,7 @@
 ---
 name: workflow-designer
 description: Design state machines, orchestration workflows, saga patterns, and resilience strategies for distributed systems, AI agents, and complex async processes. Use when asking for a workflow, state machine, orchestration design, saga, HITL checkpoint, or process resilience strategy.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

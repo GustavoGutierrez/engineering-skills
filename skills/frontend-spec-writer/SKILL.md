@@ -1,7 +1,7 @@
 ---
 name: frontend-spec-writer
 description: "Design complete frontend specifications from product requirements: UX flows, component hierarchies, component contracts (props/events), state management, responsive breakpoints, accessibility rules, and API integration mapping. Use when asking to design a frontend spec, component architecture, UI specification, or view specification."
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

@@ -1,7 +1,7 @@
 ---
 name: acceptance-criteria-generator
 description: Transform user stories and specifications into precise, verifiable Gherkin acceptance criteria using Given/When/Then syntax with Happy Path, Sad Path, and edge case scenarios. Use when asking for acceptance criteria, Gherkin scenarios, BDD criteria, test scenarios, or AC generation.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

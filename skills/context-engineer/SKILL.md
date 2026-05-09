@@ -1,7 +1,7 @@
 ---
 name: context-engineer
 description: Optimize and structure context for agents and LLMs by reducing noise, prioritizing relevance, organizing memory, defining constraints, and managing token budgets.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

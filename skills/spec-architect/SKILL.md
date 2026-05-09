@@ -1,7 +1,7 @@
 ---
 name: spec-architect
 description: Design high-level functional and technical specifications by defining scope, modules, contracts, boundaries, responsibilities, architecture models, constraints, and verification criteria.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

@@ -1,7 +1,7 @@
 ---
 name: solution-architect
 description: Design real technical solution architectures for scalable, secure, cost-aware systems by selecting patterns, components, integrations, data flows, and tradeoffs; use when asked for senior solution architecture, system architecture, SaaS architecture, LLM architecture, or architecture decisions after a spec.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

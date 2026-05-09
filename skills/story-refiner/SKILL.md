@@ -1,7 +1,7 @@
 ---
 name: story-refiner
 description: Refine user stories into sprint-ready backlog items using INVEST checks, gap analysis, Gherkin acceptance criteria, edge cases, dependencies, and structured refinement questions.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

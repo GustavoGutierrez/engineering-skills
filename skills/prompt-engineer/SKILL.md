@@ -1,7 +1,7 @@
 ---
 name: prompt-engineer
 description: Design and engineer System Prompts, prompt templates, and multi-agent orchestration contracts for deterministic, leak-proof AI systems. Use when creating agents, writing skill definitions, designing prompt templates with safe variable injection, structuring I/O contracts, or building multi-agent pipelines.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"

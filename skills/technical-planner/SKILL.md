@@ -1,7 +1,7 @@
 ---
 name: technical-planner
 description: Plan technical execution for software systems by organizing phases, dependencies, sequencing, infrastructure foundations, MVP scope, coordination points, and incremental architecture delivery.
-license: Apache-2.0
+license: MIT
 metadata:
   author: gustavog-gutierrez
   version: "1.0"
