@@ -1,5 +1,7 @@
 # Engineering Skills
 
+[![skills.sh](https://skills.sh/b/GustavoGutierrez/engineering-skills)](https://skills.sh/GustavoGutierrez/engineering-skills)
+
 A collection of reusable AI agent skills for engineering, product, architecture, and delivery workflows. Each skill packages a specific professional capability as structured guidance that an AI agent can load when the task matches its purpose.
 
 The repository contains generic, domain-independent skills. They are designed to describe reusable behaviors, methods, quality standards, output structures, and decision rules rather than project-specific documentation or mutable business context.
