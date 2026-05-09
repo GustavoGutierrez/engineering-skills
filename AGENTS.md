@@ -34,7 +34,7 @@ skills/
 ```markdown
 ---
 name: {skill-name}
-description: {One sentence describing when to use this skill. Include trigger phrases and discovery keywords.}
+description: "{One sentence describing when to use this skill. Include trigger phrases and discovery keywords. Always quote if the value contains colons (:)."
 license: {SPDX license identifier, e.g., MIT or Apache-2.0}
 metadata:
   author: gustavog-gutierrez
@@ -153,6 +153,47 @@ After creating or updating a skill:
 cd skills
 zip -r {skill-name}.zip {skill-name}/
 ```
+
+### YAML Frontmatter Validation
+
+Before committing a new or modified skill, validate the SKILL.md frontmatter to ensure the skills CLI can parse it:
+
+```bash
+python3 -c "
+import yaml, sys
+
+with open('skills/{skill-name}/SKILL.md', 'r') as f:
+    content = f.read()
+
+frontmatter = content.split('---')[1]
+try:
+    data = yaml.safe_load(frontmatter)
+    required = ['name', 'description', 'license', 'metadata', 'allowed-tools', 'triggers']
+    for field in required:
+        if field not in data:
+            print(f'ERROR: Missing required field: {field}')
+            sys.exit(1)
+    # Check metadata subfields
+    if 'author' not in data.get('metadata', {}):
+        print('ERROR: Missing metadata.author')
+        sys.exit(1)
+    if 'version' not in data.get('metadata', {}):
+        print('ERROR: Missing metadata.version')
+        sys.exit(1)
+    print('OK: Frontmatter is valid YAML with all required fields')
+except yaml.error.YAMLError as e:
+    print(f'YAML PARSE ERROR: {e}')
+    sys.exit(1)
+"
+```
+
+**Common pitfalls that break the skills CLI:**
+
+- Description contains `:` (colon) without quotes — YAML interprets it as a new mapping key
+  - **Wrong:** `description: Design systems: patterns, components, and guidelines`
+  - **Right:** `description: "Design systems: patterns, components, and guidelines"`
+- Any frontmatter field value containing special YAML characters (`:`, `#`, `{`, `}`, `[`, `]`) must be quoted
+- Indentation must be consistent (2 spaces, no tabs)
 
 ### End-User Installation
 
