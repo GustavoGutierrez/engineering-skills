@@ -63,7 +63,7 @@ flowchart TD
     F --> G["detailed.spec.md\n- Verifiable requirements\n- Guardrails\n- Validation plan"]
     G --> H[reviewer]
     H --> I["Review Report\n- Issues\n- Severity\n- Corrections"]
-    I --> J{task-breakdown]
+    I --> J[task-breakdown]
     J --> K["Task List\n- Execution waves\n- Dependencies\n- Ownership"]
     K --> L[technical-planner]
     L --> M["Technical Roadmap\n- Phases\n- MVP scope\n- Coordination points"]
