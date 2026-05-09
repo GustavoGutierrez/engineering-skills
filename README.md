@@ -1,5 +1,7 @@
 # Engineering Skills
 
+[![skills.sh](https://skills.sh/b/GustavoGutierrez/engineering-skills)](https://skills.sh/GustavoGutierrez/engineering-skills)
+
 A collection of reusable AI agent skills for engineering, product, architecture, and delivery workflows. Each skill packages a specific professional capability as structured guidance that an AI agent can load when the task matches its purpose.
 
 The repository contains generic, domain-independent skills. They are designed to describe reusable behaviors, methods, quality standards, output structures, and decision rules rather than project-specific documentation or mutable business context.
@@ -15,6 +17,33 @@ skills/
     assets/         # Optional templates or resources
   {skill-name}.zip
 ```
+
+## Install
+
+Install this skill collection with the skills CLI:
+
+```bash
+npx skills add GustavoGutierrez/engineering-skills
+```
+
+After installation, the skills become available to supported AI agents and can be loaded when the user's request semantically matches a skill description or trigger.
+
+## skills.sh Publication
+
+This repository is prepared for discovery through skills.sh. The directory lists skills from public GitHub sources based on installs performed through the skills CLI.
+
+To make the collection discoverable:
+
+1. Keep this repository public on GitHub.
+2. Keep each skill in `skills/{skill-name}/SKILL.md` with valid frontmatter.
+3. Keep this README table synchronized with the actual skills.
+4. Share the install command:
+
+```bash
+npx skills add GustavoGutierrez/engineering-skills
+```
+
+5. Once users install the repository through the CLI, the repository can be surfaced by skills.sh install telemetry.
 
 ## Available Skills
 
