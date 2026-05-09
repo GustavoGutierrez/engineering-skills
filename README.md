@@ -1,7 +1,5 @@
 # Engineering Skills
 
-[![skills.sh](https://skills.sh/b/GustavoGutierrez/engineering-skills)](https://skills.sh/GustavoGutierrez/engineering-skills)
-
 A collection of reusable AI agent skills for engineering, product, architecture, and delivery workflows. Each skill packages a specific professional capability as structured guidance that an AI agent can load when the task matches its purpose.
 
 The repository contains generic, domain-independent skills. They are designed to describe reusable behaviors, methods, quality standards, output structures, and decision rules rather than project-specific documentation or mutable business context.
@@ -20,17 +18,51 @@ skills/
 
 ## Install
 
-Install this skill collection with the skills CLI:
+Install all skills from this repository with the skills CLI:
 
 ```bash
-npx skills add GustavoGutierrez/engineering-skills
+npx skills add gustavogutierrez/engineering-skills --all
 ```
 
 After installation, the skills become available to supported AI agents and can be loaded when the user's request semantically matches a skill description or trigger.
 
+To inspect which skills the CLI detects in the repository before installing, run:
+
+```bash
+npx skills add gustavogutierrez/engineering-skills --list
+```
+
+### Install Individual Skills
+
+Install a specific skill from this repository by selecting it with `--skill`:
+
+```bash
+npx skills add gustavogutierrez/engineering-skills --skill context-engineer
+npx skills add gustavogutierrez/engineering-skills --skill prd-writer
+npx skills add gustavogutierrez/engineering-skills --skill prp-writer
+npx skills add gustavogutierrez/engineering-skills --skill spec-architect
+npx skills add gustavogutierrez/engineering-skills --skill spec-writer
+npx skills add gustavogutierrez/engineering-skills --skill story-refiner
+npx skills add gustavogutierrez/engineering-skills --skill task-breakdown
+npx skills add gustavogutierrez/engineering-skills --skill technical-planner
+npx skills add gustavogutierrez/engineering-skills --skill togaf-writer
+```
+
+### Direct Skill Folder URL
+
+The CLI also supports installing from a direct GitHub folder URL:
+
+```bash
+npx skills add https://github.com/GustavoGutierrez/engineering-skills/tree/main/skills/context-engineer
+```
+
+For this repository, prefer the `--skill` form above because it keeps the source as `gustavogutierrez/engineering-skills` while selecting the skill by name.
+
 ## skills.sh Publication
 
 This repository is prepared for discovery through skills.sh. The directory lists skills from public GitHub sources based on installs performed through the skills CLI.
+
+The skills.sh badge is intentionally not shown here until the repository has a valid skills.sh badge resource. Add it later when `https://skills.sh/b/GustavoGutierrez/engineering-skills` resolves successfully.
 
 To make the collection discoverable:
 
@@ -40,10 +72,18 @@ To make the collection discoverable:
 4. Share the install command:
 
 ```bash
-npx skills add GustavoGutierrez/engineering-skills
+npx skills add gustavogutierrez/engineering-skills --all
 ```
 
 5. Once users install the repository through the CLI, the repository can be surfaced by skills.sh install telemetry.
+
+When skills.sh indexes individual skills, their public pages are expected to use the skill slug without the internal `skills/` folder segment. For example:
+
+```text
+https://skills.sh/gustavogutierrez/engineering-skills/context-engineer
+```
+
+The direct GitHub folder path may include `/skills/context-engineer`, but the expected skills.sh public URL does not.
 
 ## Available Skills
 
