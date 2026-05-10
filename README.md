@@ -1,6 +1,10 @@
 # Engineering Skills
 
 [![skills.sh](https://skills.sh/b/GustavoGutierrez/engineering-skills)](https://skills.sh/GustavoGutierrez/engineering-skills)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Skills](https://img.shields.io/badge/skills-24-6f42c1)](./README.md#skill-inventory)
+[![PDF Guide](https://img.shields.io/badge/PDF-flows%20%26%20diagrams-red)](./docs/Engineering-skills.pdf)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gustavo%20Guti%C3%A9rrez-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-gutierrez-mercado)
 
 A collection of reusable AI agent skills for engineering, product, architecture, and delivery workflows. Each skill packages a specific professional capability as structured guidance that an AI agent can load when the task matches its purpose.
 
@@ -90,7 +94,7 @@ For this repository, prefer the `--skill` form above because it keeps the source
 
 This repository is prepared for discovery through skills.sh. The directory lists skills from public GitHub sources based on installs performed through the skills CLI.
 
-The skills.sh badge is intentionally not shown here until the repository has a valid skills.sh badge resource. Add it later when `https://skills.sh/b/GustavoGutierrez/engineering-skills` resolves successfully.
+The skills.sh badge is shown at the top of this README and links to the published repository entry.
 
 To make the collection discoverable:
 
@@ -242,3 +246,28 @@ This is why the repository increasingly behaves like an **AI-native engineering 
 ## Skill Inventory Maintenance
 
 When a skill is added, renamed, or removed, this README should be updated so the table remains an accurate overview of the repository contents.
+
+## Visual Flows and Diagrams
+
+If you want a faster way to understand how the skills can be combined across the engineering lifecycle, see the PDF guide:
+
+- [Engineering Skills — flows and diagrams (PDF)](./docs/Engineering-skills.pdf)
+
+The PDF provides visual references for recommended flows, skill relationships, and practical ways to understand when a skill fits before, during, or after specification and design work.
+
+## Author
+
+<a href="https://github.com/GustavoGutierrez">
+  <img src="https://avatars.githubusercontent.com/u/3159203?v=4" width="64" alt="Gustavo Gutierrez" />
+</a>
+
+**[Gustavo Gutiérrez](https://github.com/GustavoGutierrez)** — Author and principal maintainer of this repository and [DevForge](https://github.com/GustavoGutierrez/devforge), [DevPixelForge (dpf)](https://github.com/GustavoGutierrez/devpixelforge), [Canopy Ruler](https://github.com/GustavoGutierrez/canopy-ruler), [Celador CLI](https://github.com/GustavoGutierrez/celador).
+
+- LinkedIn: https://www.linkedin.com/in/gustavo-gutierrez-mercado
+- GitHub: https://github.com/GustavoGutierrez
+
+## Support
+
+If Engineering Skills has been useful to you, consider supporting development:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z81YYSUI)
