@@ -71,14 +71,32 @@ Install a specific skill from this repository by selecting it with `--skill`. Th
 
 ```bash
 npx skills add gustavogutierrez/engineering-skills --skill context-engineer
-npx skills add gustavogutierrez/engineering-skills --skill prd-writer
+npx skills add gustavogutierrez/engineering-skills --skill acceptance-criteria-generator
 npx skills add gustavogutierrez/engineering-skills --skill api-spec-writer
+npx skills add gustavogutierrez/engineering-skills --skill compliance-guard
 npx skills add gustavogutierrez/engineering-skills --skill decision-record-writer
+npx skills add gustavogutierrez/engineering-skills --skill documentation-architect
+npx skills add gustavogutierrez/engineering-skills --skill frontend-spec-writer
 npx skills add gustavogutierrez/engineering-skills --skill observability-designer
+npx skills add gustavogutierrez/engineering-skills --skill prd-writer
+npx skills add gustavogutierrez/engineering-skills --skill prompt-engineer
+npx skills add gustavogutierrez/engineering-skills --skill prp-writer
 npx skills add gustavogutierrez/engineering-skills --skill release-planner
+npx skills add gustavogutierrez/engineering-skills --skill reviewer
+npx skills add gustavogutierrez/engineering-skills --skill risk-assessor
+npx skills add gustavogutierrez/engineering-skills --skill solution-architect
+npx skills add gustavogutierrez/engineering-skills --skill spec-architect
+npx skills add gustavogutierrez/engineering-skills --skill spec-writer
+npx skills add gustavogutierrez/engineering-skills --skill story-refiner
+npx skills add gustavogutierrez/engineering-skills --skill task-breakdown
+npx skills add gustavogutierrez/engineering-skills --skill technical-planner
+npx skills add gustavogutierrez/engineering-skills --skill togaf-writer
+npx skills add gustavogutierrez/engineering-skills --skill traceability-manager
+npx skills add gustavogutierrez/engineering-skills --skill validation-strategist
+npx skills add gustavogutierrez/engineering-skills --skill workflow-designer
 ```
 
-To install any other skill, replace the slug with the exact name shown in the inventory table.
+The commands above cover the full set of 24 skills in this repository.
 
 ### Direct Skill Folder URL
 
