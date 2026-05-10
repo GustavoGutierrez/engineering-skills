@@ -6,6 +6,33 @@ A collection of reusable AI agent skills for engineering, product, architecture,
 
 The repository contains generic, domain-independent skills. They are designed to describe reusable behaviors, methods, quality standards, output structures, and decision rules rather than project-specific documentation or mutable business context.
 
+## What This Repository Is Becoming
+
+This repository is no longer just a set of prompts, coding helpers, or isolated writing assistants.
+
+It is evolving into an **AI-Native Engineering Governance System** — a reusable capability layer for running a disciplined engineering lifecycle with AI support across:
+
+- requirements engineering
+- architecture and specification design
+- governance and decision traceability
+- validation and verification
+- delivery planning and release control
+- observability and operational readiness
+
+In practice, it is moving closer to an **Autonomous Specification Engineering Platform** than to a simple agent toolbox. The collection now supports a flow that resembles modernized systems engineering, enterprise architecture automation, and AI-orchestrated SDLC execution.
+
+From an enterprise perspective, the repository is designed to help an agent participate in the same control surfaces that matter to serious delivery organizations:
+
+- requirement clarification and decomposition
+- specification and architecture governance
+- decision logging and traceability
+- policy enforcement and risk control
+- validation and quality gate design
+- release coordination and operational readiness
+- documentation and observability strategy
+
+The result is a repository that can support **design-time rigor**, **delivery-time control**, and **production-time visibility** rather than only artifact generation.
+
 ## Repository Structure
 
 ```text
@@ -36,24 +63,18 @@ npx skills add gustavogutierrez/engineering-skills --list
 
 ### Install Individual Skills
 
-Install a specific skill from this repository by selecting it with `--skill`:
+Install a specific skill from this repository by selecting it with `--skill`. The full catalog is listed later in this README under **Skill Inventory**.
 
 ```bash
 npx skills add gustavogutierrez/engineering-skills --skill context-engineer
 npx skills add gustavogutierrez/engineering-skills --skill prd-writer
-npx skills add gustavogutierrez/engineering-skills --skill prp-writer
-npx skills add gustavogutierrez/engineering-skills --skill spec-architect
-npx skills add gustavogutierrez/engineering-skills --skill spec-writer
-npx skills add gustavogutierrez/engineering-skills --skill story-refiner
-npx skills add gustavogutierrez/engineering-skills --skill technical-planner
-npx skills add gustavogutierrez/engineering-skills --skill solution-architect
-npx skills add gustavogutierrez/engineering-skills --skill reviewer
-npx skills add gustavogutierrez/engineering-skills --skill acceptance-criteria-generator
-npx skills add gustavogutierrez/engineering-skills --skill workflow-designer
 npx skills add gustavogutierrez/engineering-skills --skill api-spec-writer
-npx skills add gustavogutierrez/engineering-skills --skill frontend-spec-writer
-npx skills add gustavogutierrez/engineering-skills --skill prompt-engineer
+npx skills add gustavogutierrez/engineering-skills --skill decision-record-writer
+npx skills add gustavogutierrez/engineering-skills --skill observability-designer
+npx skills add gustavogutierrez/engineering-skills --skill release-planner
 ```
+
+To install any other skill, replace the slug with the exact name shown in the inventory table.
 
 ### Direct Skill Folder URL
 
@@ -92,26 +113,131 @@ https://skills.sh/gustavogutierrez/engineering-skills/context-engineer
 
 The direct GitHub folder path may include `/skills/context-engineer`, but the expected skills.sh public URL does not.
 
-## Available Skills
+## Skill Map by Functional Group and SDLC Phase
 
-| Skill | Purpose | How to Use | When to Use | Files |
-| --- | --- | --- | --- | --- |
-| `context-engineer` | Optimizes and structures context for agents and LLMs by reducing noise, prioritizing relevance, organizing memory, defining constraints, and managing token budgets. | Load this skill with a prompt, conversation, document set, memory dump, or multi-agent workflow to produce a compact context package. | Use it to improve AI outputs, reduce token consumption, prepare agent handoffs, structure memory, or design context strategy for multi-agent systems. | `skills/context-engineer/SKILL.md` / `skills/context-engineer.zip` |
-| `prd-writer` | Creates clear, measurable Product Requirements Documents that align product intent with delivery context. | Load this skill with a product idea, feature concept, or vague requirement to produce a PRD with summary, user stories, success criteria, scope, risks, and roadmap. | Use it at the beginning of an initiative when product requirements need to be clarified, aligned, and documented before planning or implementation. | `skills/prd-writer/SKILL.md` / `skills/prd-writer.zip` |
-| `prp-writer` | Creates structured Product Requirements Prompts for AI-assisted development, including context, requirements, constraints, risks, and open questions. | Load this skill with a feature, system idea, or initiative to produce a complete PRP with standardized sections and depth appropriate to complexity. | Use it when a team needs a robust requirements prompt before asking AI agents or assistants to help with implementation. | `skills/prp-writer/SKILL.md` / `skills/prp-writer.zip` |
-| `spec-architect` | Designs high-level functional and technical specifications with scope, modules, contracts, boundaries, responsibilities, constraints, and verification criteria. | Load this skill with a product intent, rough requirement, PRD, PRP, or complex system idea to produce an architecture-ready specification. | Use it before implementation for complex systems, agent-oriented architecture, SDD workflows, or any change that needs clear module boundaries and contracts. | `skills/spec-architect/SKILL.md` / `skills/spec-architect.zip` |
-| `spec-writer` | Writes, rewrites, or normalizes `*.spec.md` files with verifiable requirements, guardrails, acceptance criteria, and validation plans. | Load this skill when a need, bug, feature, or existing behavior must become an implementation-ready specification. | Use it before coding when the expected behavior, scope, constraints, and Definition of Done must be explicit. | `skills/spec-writer/SKILL.md` / `skills/spec-writer.zip` |
-| `task-breakdown` | Breaks complex features, epics, or specs into small executable tasks with logical sequencing, dependencies, ownership, acceptance signals, and parallelization guidance. | Load this skill with a feature, epic, spec, roadmap item, or delivery goal to produce execution waves, task details, dependencies, and parallelization guidance. | Use it for sprint planning, issue tracker preparation, agent delegation, parallel work planning, and decomposition of complex delivery goals. | `skills/task-breakdown/SKILL.md` / `skills/task-breakdown.zip` |
-| `technical-planner` | Plans technical execution by organizing phases, dependencies, implementation order, infrastructure foundations, MVP scope, coordination points, and incremental architecture delivery. | Load this skill with a spec, architecture, PRD, PRP, roadmap goal, or complex system plan to produce a phased technical execution roadmap. | Use it for MVP planning, technical roadmaps, multi-team coordination, dependency sequencing, and incremental architecture rollout. | `skills/technical-planner/SKILL.md` / `skills/technical-planner.zip` |
-| `togaf-writer` | Drafts TOGAF-aligned enterprise architecture artifacts using ADM, architecture domains, baseline-to-target analysis, governance, and roadmap planning. | Load this skill to structure architecture vision, gap analysis, traceability matrices, application or data catalogs, migration roadmaps, or architecture contracts. | Use it when the work requires enterprise-level architecture reasoning, business alignment, governance, and transition planning. | `skills/togaf-writer/SKILL.md` / `skills/togaf-writer.zip` |
-| `story-refiner` | Refines user stories using INVEST, gap detection, Gherkin acceptance criteria, edge cases, dependencies, and split recommendations. | Load this skill with a raw story, requirement, or backlog item to produce a refined story with INVEST review, gaps, acceptance criteria, negative scenarios, assumptions, and open questions. | Use it during backlog refinement, sprint planning, or ticket preparation when a story must become clearer, smaller, more valuable, estimable, and testable. | `skills/story-refiner/SKILL.md` / `skills/story-refiner.zip` |
-| `solution-architect` | Designs real technical solution architectures for scalable, secure, cost-aware systems by selecting patterns, components, integrations, data flows, and tradeoffs. | Load this skill with a system idea, architecture problem, or spec to produce FSM state models, C4 component diagrams, threat models, and tradeoff decisions. | Use it for senior solution architecture, SaaS architecture, LLM architecture, or architecture decisions after a spec. | `skills/solution-architect/SKILL.md` / `skills/solution-architect.zip` |
-| `reviewer` | Rigorous technical and quality reviewer that audits artifacts (PRDs, specs, architectures, user stories, APIs) for consistency, completeness, clarity, gaps, and standards compliance. | Load this skill with an artifact to review and receive a structured audit with issues, severity, and suggested corrections. | Use it for quality audits, QA gates, technical validation, or before implementation. | `skills/reviewer/SKILL.md` / `skills/reviewer.zip` |
-| `acceptance-criteria-generator` | Transforms user stories and specifications into precise, verifiable Gherkin acceptance criteria using Given/When/Then syntax with Happy Path, Sad Path, and edge case scenarios. | Load this skill with a user story or spec to produce structured Gherkin scenarios with preconditions, steps, and assertions. | Use it when asking for acceptance criteria, Gherkin scenarios, BDD criteria, or test scenarios. | `skills/acceptance-criteria-generator/SKILL.md` / `skills/acceptance-criteria-generator.zip` |
-| `workflow-designer` | Designs state machines, orchestration workflows, saga patterns, and resilience strategies for distributed systems, AI agents, and complex async processes. | Load this skill with a business process, event-driven system, or agent workflow to produce FSM diagrams, saga choreography, HITL checkpoints, and resilience patterns. | Use it for workflow design, state machine design, saga patterns, or process resilience strategy. | `skills/workflow-designer/SKILL.md` / `skills/workflow-designer.zip` |
-| `api-spec-writer` | Designs complete API contracts in OpenAPI 3.0/3.1 YAML with endpoints, schemas, security, pagination, error handling, and RFC 7807 problem details. | Load this skill with an API idea, data model, or integration requirement to produce a complete OpenAPI YAML spec. | Use it when designing an API, creating an OpenAPI spec, defining API endpoints, or writing API contracts. | `skills/api-spec-writer/SKILL.md` / `skills/api-spec-writer.zip` |
-| `frontend-spec-writer` | Designs frontend component hierarchies, props/events contracts, UX flows, state management, responsive breakpoints, accessibility rules, and microinteractions. | Load this skill with UI requirements, user flows, or component lists to produce component classification, state diagrams, responsive rules, and accessibility contracts. | Use it for UI specification, component API design, or frontend architecture. | `skills/frontend-spec-writer/SKILL.md` / `skills/frontend-spec-writer.zip` |
-| `prompt-engineer` | Designs System Prompts, prompt templates, and multi-agent orchestration contracts for deterministic, leak-proof AI systems. | Load this skill when creating agents, writing skill definitions, designing prompt templates with safe variable injection, or building multi-agent pipelines. | Use it for prompt injection defense, I/O contracts, agent role definitions, or system prompt architecture. | `skills/prompt-engineer/SKILL.md` / `skills/prompt-engineer.zip` |
+The collection is organized below as a logical engineering flow rather than a flat list. Each group covers a distinct layer of a robust AI-assisted development system.
+
+### 1. Foundation for AI-Assisted Engineering
+
+These skills define how agents think, how context is shaped, and how prompt-driven workflows stay deterministic and reusable. They sit underneath the rest of the stack because every later artifact depends on good context hygiene and clear agent contracts.
+
+| Skill | Purpose |
+| --- | --- |
+| `context-engineer` | Optimizes and structures context for agents and LLMs by reducing noise, prioritizing relevance, organizing memory, defining constraints, and managing token budgets. |
+| `prompt-engineer` | Designs system prompts, prompt templates, and multi-agent orchestration contracts for deterministic, leak-resistant AI systems. |
+
+### 2. Requirements and Product Definition
+
+These skills turn raw ideas, stakeholder requests, and backlog inputs into structured requirement artifacts. This is the layer that makes intent explicit before architecture or implementation decisions are made.
+
+| Skill | Purpose |
+| --- | --- |
+| `prd-writer` | Creates clear, measurable Product Requirements Documents that align product intent with delivery context. |
+| `prp-writer` | Creates structured Product Requirements Prompts for AI-assisted development, including context, requirements, constraints, risks, and open questions. |
+| `story-refiner` | Refines user stories using INVEST, gap detection, edge cases, dependencies, and split recommendations. |
+| `acceptance-criteria-generator` | Transforms stories and specifications into precise, verifiable Gherkin acceptance criteria with happy path, failure path, and edge-case coverage. |
+
+### 3. Specification and Architecture Design
+
+These skills convert requirements into system shape: specifications, architecture, interfaces, workflows, and technical planning. Together they cover both solution intent and executable design structure.
+
+| Skill | Purpose |
+| --- | --- |
+| `spec-architect` | Designs high-level functional and technical specifications with scope, modules, contracts, boundaries, responsibilities, constraints, and verification criteria. |
+| `spec-writer` | Writes, rewrites, or normalizes implementation-ready specification files with verifiable requirements, guardrails, acceptance criteria, and validation plans. |
+| `solution-architect` | Designs scalable, secure, cost-aware solution architectures with patterns, components, integrations, data flows, and tradeoffs. |
+| `workflow-designer` | Designs state machines, orchestration workflows, saga patterns, and resilience strategies for distributed systems, AI agents, and async processes. |
+| `api-spec-writer` | Designs complete OpenAPI contracts with endpoints, schemas, security, pagination, and standardized error handling. |
+| `frontend-spec-writer` | Designs frontend component hierarchies, contracts, UX flows, state behavior, responsiveness, accessibility rules, and microinteractions. |
+| `technical-planner` | Plans technical execution by sequencing phases, dependencies, implementation order, MVP scope, and incremental architecture delivery. |
+| `togaf-writer` | Drafts TOGAF-aligned enterprise architecture artifacts using ADM, governance, baseline-to-target analysis, and migration planning. |
+
+### 4. Governance, Decision Control, and Traceability
+
+These skills make the system auditable and governable. They connect decisions, risks, policies, requirements, and implementation artifacts so that engineering work becomes explainable, reviewable, and safe to evolve.
+
+| Skill | Purpose |
+| --- | --- |
+| `decision-record-writer` | Writes architecture decision records (ADRs) using an append-only supersession model with rationale, alternatives, tradeoffs, and consequences. |
+| `risk-assessor` | Identifies and prioritizes technical, operational, scalability, security, delivery, and AI/spec ambiguity risks with concrete mitigations. |
+| `compliance-guard` | Enforces architectural standards, governance policies, conventions, constraints, and specification guardrails across engineering artifacts. |
+| `traceability-manager` | Maintains bidirectional requirement-to-implementation traceability with typed links, coverage checks, orphan detection, and change impact analysis. |
+
+### 5. Implementation Planning, Validation, and Quality Gates
+
+These skills prepare work for execution and verify that planned or produced artifacts are actually fit to build, test, and evolve. This layer is where the repository starts behaving like a full engineering control system rather than a writing toolkit.
+
+| Skill | Purpose |
+| --- | --- |
+| `task-breakdown` | Breaks complex features, epics, or specs into executable tasks with sequencing, dependencies, ownership, and parallelization guidance. |
+| `validation-strategist` | Designs layered validation and verification strategies across unit, component, feature, application, and release-candidate levels. |
+| `reviewer` | Performs rigorous technical and quality reviews of artifacts for consistency, completeness, clarity, gaps, and standards alignment. |
+
+### 6. Release, Observability, and Operational Readiness
+
+These skills cover the late-stage SDLC path from “ready to ship” to “safe in production.” They help teams plan rollout, observe real behavior, and keep documentation and operations aligned after implementation.
+
+| Skill | Purpose |
+| --- | --- |
+| `release-planner` | Designs release execution plans with rollout waves, migration sequencing, rollback strategy, communication, validation checkpoints, and go/no-go criteria. |
+| `observability-designer` | Designs correlation-first observability strategies across logs, metrics, traces, workflow telemetry, AI telemetry, alerting, privacy, and telemetry cost. |
+| `documentation-architect` | Designs scalable documentation systems covering information architecture, onboarding, architecture docs, operations docs, governance docs, and Mermaid-based diagram guidance. |
+
+## Recommended Flows
+
+The skills can be combined as repeatable operating flows depending on what part of the lifecycle the team is working on.
+
+| Flow | Goal | Typical Skills |
+| --- | --- | --- |
+| **Product-to-Spec Flow** | Move from business intent to implementation-ready definition. | `context-engineer` → `prd-writer` → `prp-writer` → `story-refiner` → `acceptance-criteria-generator` → `spec-writer` |
+| **Architecture Design Flow** | Turn requirements into solution structure, contracts, workflows, and technical execution shape. | `spec-architect` → `solution-architect` → `api-spec-writer` / `frontend-spec-writer` → `workflow-designer` → `technical-planner` |
+| **Enterprise Governance Flow** | Add decision discipline, policy enforcement, and architecture oversight. | `togaf-writer` → `decision-record-writer` → `risk-assessor` → `compliance-guard` |
+| **Traceability and Change Control Flow** | Connect requirements to implementation and keep change impact explicit. | `traceability-manager` → `decision-record-writer` → `validation-strategist` → `reviewer` |
+| **Validation and Quality Flow** | Define how the system will be verified and reviewed before release. | `acceptance-criteria-generator` → `validation-strategist` → `reviewer` → `risk-assessor` |
+| **Production Readiness Flow** | Prepare a change for controlled release, visibility, and safe operation. | `release-planner` → `observability-designer` → `documentation-architect` |
+| **AI Agent System Flow** | Design robust AI-native workflows with prompt contracts, observability, and governance. | `context-engineer` → `prompt-engineer` → `workflow-designer` → `observability-designer` → `risk-assessor` → `compliance-guard` |
+
+## Suggested End-to-End Flow
+
+For a robust AI-assisted engineering workflow, a typical path through the repository is:
+
+1. **Shape context and agent behavior** with `context-engineer` and `prompt-engineer`.
+2. **Define intent** with `prd-writer`, `prp-writer`, `story-refiner`, and `acceptance-criteria-generator`.
+3. **Design the system** with `spec-architect`, `spec-writer`, `solution-architect`, `workflow-designer`, `api-spec-writer`, `frontend-spec-writer`, `technical-planner`, and `togaf-writer` when enterprise framing is needed.
+4. **Govern the design** with `decision-record-writer`, `risk-assessor`, `compliance-guard`, and `traceability-manager`.
+5. **Prepare execution and proof** with `task-breakdown`, `validation-strategist`, and `reviewer`.
+6. **Ship and operate safely** with `release-planner`, `observability-designer`, and `documentation-architect`.
+
+This is why the repository increasingly behaves like an **AI-native engineering governance platform** instead of a flat prompt library.
+
+## Skill Inventory
+
+| Skill | Files |
+| --- | --- |
+| `acceptance-criteria-generator` | `skills/acceptance-criteria-generator/SKILL.md` / `skills/acceptance-criteria-generator.zip` |
+| `api-spec-writer` | `skills/api-spec-writer/SKILL.md` / `skills/api-spec-writer.zip` |
+| `compliance-guard` | `skills/compliance-guard/SKILL.md` / `skills/compliance-guard.zip` |
+| `context-engineer` | `skills/context-engineer/SKILL.md` / `skills/context-engineer.zip` |
+| `decision-record-writer` | `skills/decision-record-writer/SKILL.md` / `skills/decision-record-writer.zip` |
+| `documentation-architect` | `skills/documentation-architect/SKILL.md` / `skills/documentation-architect.zip` |
+| `frontend-spec-writer` | `skills/frontend-spec-writer/SKILL.md` / `skills/frontend-spec-writer.zip` |
+| `observability-designer` | `skills/observability-designer/SKILL.md` / `skills/observability-designer.zip` |
+| `prd-writer` | `skills/prd-writer/SKILL.md` / `skills/prd-writer.zip` |
+| `prompt-engineer` | `skills/prompt-engineer/SKILL.md` / `skills/prompt-engineer.zip` |
+| `prp-writer` | `skills/prp-writer/SKILL.md` / `skills/prp-writer.zip` |
+| `release-planner` | `skills/release-planner/SKILL.md` / `skills/release-planner.zip` |
+| `reviewer` | `skills/reviewer/SKILL.md` / `skills/reviewer.zip` |
+| `risk-assessor` | `skills/risk-assessor/SKILL.md` / `skills/risk-assessor.zip` |
+| `solution-architect` | `skills/solution-architect/SKILL.md` / `skills/solution-architect.zip` |
+| `spec-architect` | `skills/spec-architect/SKILL.md` / `skills/spec-architect.zip` |
+| `spec-writer` | `skills/spec-writer/SKILL.md` / `skills/spec-writer.zip` |
+| `story-refiner` | `skills/story-refiner/SKILL.md` / `skills/story-refiner.zip` |
+| `task-breakdown` | `skills/task-breakdown/SKILL.md` / `skills/task-breakdown.zip` |
+| `technical-planner` | `skills/technical-planner/SKILL.md` / `skills/technical-planner.zip` |
+| `togaf-writer` | `skills/togaf-writer/SKILL.md` / `skills/togaf-writer.zip` |
+| `traceability-manager` | `skills/traceability-manager/SKILL.md` / `skills/traceability-manager.zip` |
+| `validation-strategist` | `skills/validation-strategist/SKILL.md` / `skills/validation-strategist.zip` |
+| `workflow-designer` | `skills/workflow-designer/SKILL.md` / `skills/workflow-designer.zip` |
 
 ## Skill Inventory Maintenance
 

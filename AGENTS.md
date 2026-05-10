@@ -8,6 +8,8 @@ A collection of skills for Claude.ai and Claude Code. Skills are packaged instru
 
 ## Creating a New Skill
 
+Before creating or updating any skill in this repository, read `docs/skill-style-guide.md` first. That file is the normative style guide for skill authoring here. Use this AGENTS.md file as the operational summary and validation checklist.
+
 ### Directory Structure
 
 ```
@@ -131,6 +133,7 @@ Before creating or updating any skill, verify that every section teaches reusabl
 Skills are loaded on-demand — only the skill name and description are loaded at startup. The full `SKILL.md` loads into context only when the agent decides the skill is relevant. To minimize context usage:
 
 - **Keep SKILL.md under 500 lines** — put detailed reference material in separate files
+- **Strong recommendation: if a SKILL.md approaches 400 lines, review whether examples, taxonomies, or edge cases should move into `references/`**
 - **Write specific descriptions** — helps the agent know exactly when to activate the skill
 - **Use progressive disclosure** — reference supporting files that get read only when needed
 - **Prefer scripts over inline code** — script execution doesn't consume context (only output does)
@@ -153,6 +156,8 @@ After creating or updating a skill:
 cd skills
 zip -r {skill-name}.zip {skill-name}/
 ```
+
+If a skill was updated, regenerate its zip immediately so the packaged distribution stays in sync with the source directory. Do not assume an existing zip is current.
 
 ### YAML Frontmatter Validation
 
@@ -208,3 +213,16 @@ cp -r skills/{skill-name} ~/.claude/skills/
 Add the skill to project knowledge or paste SKILL.md contents into the conversation.
 
 If the skill requires network access, instruct users to add required domains at `claude.ai/settings/capabilities`.
+
+## Repository Documentation Maintenance
+
+- Keep `README.md` synchronized with the actual repository skill catalog.
+- Organize the README skill map by **functional groups / SDLC phases**, not as a flat list only.
+- When adding a new skill, update the README group that best represents its role in the engineering flow.
+- When a skill materially changes the positioning of the repository, update the README narrative so it reflects the system accurately.
+
+## Practical Validation Rules for This Repository
+
+- A new or updated skill is not complete until all three artifacts are aligned: `SKILL.md`, any referenced support files, and the corresponding `.zip` package.
+- If a skill references local guidance in `references/` or `assets/`, verify that the packaged zip includes those files.
+- If a skill introduces reusable formatting or authoring rules for the rest of the repo, consider whether that rule belongs in `docs/skill-style-guide.md` or this AGENTS.md file.
