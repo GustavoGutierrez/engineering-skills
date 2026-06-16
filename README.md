@@ -70,6 +70,7 @@ npx skills add gustavogutierrez/engineering-skills --list
 Install a specific skill from this repository by selecting it with `--skill`. The full catalog is listed later in this README under **Skill Inventory**.
 
 ```bash
+npx skills add gustavogutierrez/engineering-skills --skill 4r-code-review
 npx skills add gustavogutierrez/engineering-skills --skill context-engineer
 npx skills add gustavogutierrez/engineering-skills --skill acceptance-criteria-generator
 npx skills add gustavogutierrez/engineering-skills --skill api-spec-writer
@@ -96,7 +97,7 @@ npx skills add gustavogutierrez/engineering-skills --skill validation-strategist
 npx skills add gustavogutierrez/engineering-skills --skill workflow-designer
 ```
 
-The commands above cover the full set of 24 skills in this repository.
+The commands above cover the full set of 25 skills in this repository.
 
 ### Direct Skill Folder URL
 
@@ -194,6 +195,7 @@ These skills prepare work for execution and verify that planned or produced arti
 | `task-breakdown` | Breaks complex features, epics, or specs into executable tasks with sequencing, dependencies, ownership, and parallelization guidance. |
 | `validation-strategist` | Designs layered validation and verification strategies across unit, component, feature, application, and release-candidate levels. |
 | `reviewer` | Performs rigorous technical and quality reviews of artifacts for consistency, completeness, clarity, gaps, and standards alignment. |
+| `4r-code-review` | Runs a Risk/Readability/Reliability/Resilience review on a completed code change before commit, classifying findings by severity and returning an explicit accept/block decision. |
 
 ### 6. Release, Observability, and Operational Readiness
 
@@ -216,6 +218,7 @@ The skills can be combined as repeatable operating flows depending on what part 
 | **Enterprise Governance Flow** | Add decision discipline, policy enforcement, and architecture oversight. | `togaf-writer` → `decision-record-writer` → `risk-assessor` → `compliance-guard` |
 | **Traceability and Change Control Flow** | Connect requirements to implementation and keep change impact explicit. | `traceability-manager` → `decision-record-writer` → `validation-strategist` → `reviewer` |
 | **Validation and Quality Flow** | Define how the system will be verified and reviewed before release. | `acceptance-criteria-generator` → `validation-strategist` → `reviewer` → `risk-assessor` |
+| **Pre-Commit Code Review Flow** | Gate a completed code change before it is committed, pushed, or marked done. | `4r-code-review` → (fixes) → `4r-code-review` re-check |
 | **Production Readiness Flow** | Prepare a change for controlled release, visibility, and safe operation. | `release-planner` → `observability-designer` → `documentation-architect` |
 | **AI Agent System Flow** | Design robust AI-native workflows with prompt contracts, observability, and governance. | `context-engineer` → `prompt-engineer` → `workflow-designer` → `observability-designer` → `risk-assessor` → `compliance-guard` |
 
@@ -236,6 +239,7 @@ This is why the repository increasingly behaves like an **AI-native engineering 
 
 | Skill | Files |
 | --- | --- |
+| `4r-code-review` | `skills/4r-code-review/SKILL.md` / `skills/4r-code-review.zip` |
 | `acceptance-criteria-generator` | `skills/acceptance-criteria-generator/SKILL.md` / `skills/acceptance-criteria-generator.zip` |
 | `api-spec-writer` | `skills/api-spec-writer/SKILL.md` / `skills/api-spec-writer.zip` |
 | `compliance-guard` | `skills/compliance-guard/SKILL.md` / `skills/compliance-guard.zip` |
