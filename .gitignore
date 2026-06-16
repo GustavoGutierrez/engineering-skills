@@ -1,4 +1,5 @@
 .DS_Store
 .env*.local
 .agents/
+.atl/
 skills-lock.json

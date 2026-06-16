@@ -70,7 +70,6 @@ npx skills add gustavogutierrez/engineering-skills --list
 Install a specific skill from this repository by selecting it with `--skill`. The full catalog is listed later in this README under **Skill Inventory**.
 
 ```bash
-npx skills add gustavogutierrez/engineering-skills --skill 4r-code-review
 npx skills add gustavogutierrez/engineering-skills --skill context-engineer
 npx skills add gustavogutierrez/engineering-skills --skill acceptance-criteria-generator
 npx skills add gustavogutierrez/engineering-skills --skill api-spec-writer
@@ -95,9 +94,12 @@ npx skills add gustavogutierrez/engineering-skills --skill togaf-writer
 npx skills add gustavogutierrez/engineering-skills --skill traceability-manager
 npx skills add gustavogutierrez/engineering-skills --skill validation-strategist
 npx skills add gustavogutierrez/engineering-skills --skill workflow-designer
+npx skills add gustavogutierrez/engineering-skills --skill 4r-code-review
+npx skills add gustavogutierrez/engineering-skills --skill gherkin-feature-writer
+npx skills add gustavogutierrez/engineering-skills --skill judge
 ```
 
-The commands above cover the full set of 25 skills in this repository.
+The commands above cover the full set of 27 skills in this repository.
 
 ### Direct Skill Folder URL
 
@@ -159,6 +161,7 @@ These skills turn raw ideas, stakeholder requests, and backlog inputs into struc
 | `prp-writer` | Creates structured Product Requirements Prompts for AI-assisted development, including context, requirements, constraints, risks, and open questions. |
 | `story-refiner` | Refines user stories using INVEST, gap detection, edge cases, dependencies, and split recommendations. |
 | `acceptance-criteria-generator` | Transforms stories and specifications into precise, verifiable Gherkin acceptance criteria with happy path, failure path, and edge-case coverage. |
+| `gherkin-feature-writer` | Writes declarative, standard-compliant Gherkin `.feature` files (Feature, Background, Scenario, Scenario Outline, Rule, tables) following BDD best practices for Cucumber, Behave, and SpecFlow. |
 
 ### 3. Specification and Architecture Design
 
@@ -196,6 +199,7 @@ These skills prepare work for execution and verify that planned or produced arti
 | `validation-strategist` | Designs layered validation and verification strategies across unit, component, feature, application, and release-candidate levels. |
 | `reviewer` | Performs rigorous technical and quality reviews of artifacts for consistency, completeness, clarity, gaps, and standards alignment. |
 | `4r-code-review` | Runs a Risk/Readability/Reliability/Resilience review on a completed code change before commit, classifying findings by severity and returning an explicit accept/block decision. |
+| `judge` | Read-only extreme code reviewer that adjudicates completed work against scenario coverage, TDD discipline, quality, and `CHECKPOINTS.md`, returning a binary APPROVED / CHANGES_REQUESTED verdict without editing code. |
 
 ### 6. Release, Observability, and Operational Readiness
 
@@ -240,6 +244,8 @@ This is why the repository increasingly behaves like an **AI-native engineering 
 | Skill | Files |
 | --- | --- |
 | `4r-code-review` | `skills/4r-code-review/SKILL.md` / `skills/4r-code-review.zip` |
+| `gherkin-feature-writer` | `skills/gherkin-feature-writer/SKILL.md` / `skills/gherkin-feature-writer.zip` |
+| `judge` | `skills/judge/SKILL.md` / `skills/judge.zip` |
 | `acceptance-criteria-generator` | `skills/acceptance-criteria-generator/SKILL.md` / `skills/acceptance-criteria-generator.zip` |
 | `api-spec-writer` | `skills/api-spec-writer/SKILL.md` / `skills/api-spec-writer.zip` |
 | `compliance-guard` | `skills/compliance-guard/SKILL.md` / `skills/compliance-guard.zip` |
